@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head th:replace = "/fragments/head :: head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" th:href="@{/css/category.css}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a th:href="@{/index}">
+                <img th:src="@{/images/icons/logo-01.png}" alt="Logo">
+			</a>
+            <div class="right-header">
+                <a th:href="@{/admin}">Admin Home</a> | 
+                <a th:href="@{/logout}">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Danh mục sản phẩm</h1>
+            <div>
+            <a th:href="@{/add-category}" class="btn btn-primary">Thêm danh mục</a>
+            <br>
+            <br>
+            </div>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>SN</th>
+                        <th>Tên danh mục</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Áo thun</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Sửa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Quần jean</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Sửa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Quần jean</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Sửa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Quần jean</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Sửa</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    
+    
+<!-- phân trang footer -->
+<div th:replace = "/fragments/footer :: footer"></div>
+
+    
+</body>
+</html>
